@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 import yfinance as yf
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 import torch
-# Removed unused sklearn import (caused import resolution error in some environments)
+from sklearn.linear_model import LinearRegression
 import chromadb
 from chromadb.utils import embedding_functions
 import json
@@ -481,4 +481,5 @@ elif tool == "Budget Planner":
 # ============================================================================
 
 st.markdown("---")
+
 st.markdown("*Disclaimer: This is an AI assistant for educational purposes. Consult a certified financial advisor for personalized advice.*")
