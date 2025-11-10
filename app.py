@@ -509,5 +509,3 @@ else:
 # Footer
 st.markdown("---")
 st.caption("⚠️ Educational purposes only. Consult SEBI registered advisor for personalized advice.")
-
-st.caption("Powered by GROQ AI (Llama 3.1) 🚀")
