@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 
 # Page Config
-st.set_page_config(page_title="AI Finance Assistant", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Finny", layout="wide")
 
 # Custom CSS
 st.markdown("""<style>
@@ -324,7 +324,7 @@ with st.sidebar:
     
     # API Status
     if API_KEY:
-        st.success(" GROQ AI Enabled ✅")
+        st.success(" AI Enabled ")
     else:
         st.error(" AI Unavailable")
         st.info("Get free API key:\n[console.groq.com/keys](https://console.groq.com/keys)")
@@ -364,7 +364,7 @@ with st.sidebar:
 
 # Chat Tool
 if tool == "💬 Chat":
-    st.header("💬 Chat Assistant")
+    st.header("")
     
     # Initialize with greeting
     if not st.session_state.messages:
@@ -509,3 +509,4 @@ else:
 # Footer
 st.markdown("---")
 st.caption("⚠️ Educational purposes only. Consult SEBI registered advisor for personalized advice.")
+
