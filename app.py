@@ -187,7 +187,7 @@ Respond naturally as Finny would - warm, helpful, and conversational!"""
     
     # Request payload
     data = {
-        "model": "llama-3.1-70b-versatile",  # Fast and high-quality
+        "model": "llama-3.3-70b-versatile",  # Fast and high-quality
         "messages": messages,
         "temperature": 0.9,
         "max_tokens": 350,
@@ -509,4 +509,5 @@ else:
 # Footer
 st.markdown("---")
 st.caption("⚠️ Educational purposes only. Consult SEBI registered advisor for personalized advice.")
+
 st.caption("Powered by GROQ AI (Llama 3.1) 🚀")
